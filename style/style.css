@@ -21,7 +21,6 @@
 body {
   background-color: var(--backgroud_color_var);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -41,7 +40,8 @@ ul {
   list-style: none;
 }
 /* Логотип верх */
-.logo > span {
+.web-logo,
+.studio-logo-head {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -57,26 +57,24 @@ ul {
 ul > .linknow a {
     color: var(--hover_text_color);
 }
-.head_navigator a {
+.head_navigator {
   color: var(--primary_text_color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.head_navigator a:hover,
+.head_navigator:hover,
 :focus {
   color: var(--hover_text_color);
 }
-.mailphone-head a {
+.mailphone-head{
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second_text_color);
 }
-.mailphone-head a:hover,
-:focus {
+.mailphone-head:hover {
+  color: var(--hover_text_color);
+}
+.mailphone-head:focus {
   color: var(--hover_text_color);
 }
 /* BIG IMAGE */
@@ -111,8 +109,6 @@ ul > .linknow a {
 /* особенности */
 .text-h-index {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
 }
 .text-p-index {
@@ -140,10 +136,12 @@ ul > .linknow a {
 .work_place {
   text-align: center;
   color: var(--second_text_color);
+  font-size: 16px;
+  line-height: 1.18;  
 }
 /* Логотип футер */
 .studio-logo-foot,
-footer p {
+.adres_street {
   color: var(--white_color_text);
 }
 .adress-footer {
@@ -153,13 +151,11 @@ footer p {
 footer {
   background-color: var(--primary_text_color);
 }
-footer a,
-footer p {
+.adress-footer,
+.adres_street {
   font-family: 'Roboto';
   font-style: normal;
   cursor: default;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.9;
 }
 .adress-footer:hover,
